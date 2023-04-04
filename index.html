@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>AVALANCHE PASSWORD</h1>
+    <div class="options">
+      <label class="custom-checkbox"><input type="checkbox" id="numbers" checked><span class="checkmark"></span>Numbers</label>
+      <label class="custom-checkbox"><input type="checkbox" id="lowercase" checked><span class="checkmark"></span>LowerCase</label>
+      <label class="custom-checkbox"><input type="checkbox" id="uppercase" checked><span class="checkmark"></span>UpperCase</label>
+      <label class="custom-checkbox"><input type="checkbox" id="symbols" checked><span class="checkmark"></span>Symbols</label>
+      <label class="custom-checkbox"><input type="checkbox" id="spaces"><span class="checkmark"></span>Spaces</label>
+    </div>
+    <button id="generateBtn">Generate Password</button>
+    <div class="outputBoxContainer">
+      <div class="outputBox" id="outputBox">
+        <div class="output" id="output"></div>
+        <button id="copyBtn" onclick="copyPassword()">Copy Password</button>
+      </div>
+    </div>
+  </div>
+  <div id="notification"><span>PASSWORD COPPIED TO CLIPBOARD</span></div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
